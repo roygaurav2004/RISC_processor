@@ -1,0 +1,612 @@
+
+*** Running vivado
+    with args -log main_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main_module.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Tue Nov 12 15:38:19 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source main_module.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 530.289 ; gain = 200.457
+Command: synth_design -top main_module -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24456
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1409.121 ; gain = 448.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'temp', assumed default net type 'wire' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/alu.v:32]
+INFO: [Synth 8-11241] undeclared symbol 'mux4Out', assumed default net type 'wire' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/data_path.v:76]
+INFO: [Synth 8-6157] synthesizing module 'main_module' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/main_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clkdiv' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/clkdiv.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/clkdiv.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_path' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/data_path.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pc' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instr_mem' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/instr_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.runs/synth_1/.Xil/Vivado-27640-LAPTOP-II713AN1/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.runs/synth_1/.Xil/Vivado-27640-LAPTOP-II713AN1/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (16) of module 'blk_mem_gen_0' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/instr_mem.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'instr_mem' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/instr_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/data_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_2' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.runs/synth_1/.Xil/Vivado-27640-LAPTOP-II713AN1/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_2' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.runs/synth_1/.Xil/Vivado-27640-LAPTOP-II713AN1/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/data_mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'npc' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/npc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'full_adder_1bit' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/full_adder_1bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder_1bit' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/full_adder_1bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'npc' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/npc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ir' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/ir.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ir' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/ir.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sign_extend' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/sign_extend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sign_extend' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/sign_extend.v:23]
+INFO: [Synth 8-6157] synthesizing module 'muxReg' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/muxReg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'muxReg' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/muxReg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register_bank' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/register_bank.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'register_bank' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/register_bank.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'w_add' does not match port width (4) of module 'register_bank' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/data_path.v:71]
+WARNING: [Synth 8-689] width (5) of port connection 'r_add1' does not match port width (4) of module 'register_bank' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/data_path.v:71]
+WARNING: [Synth 8-689] width (5) of port connection 'r_add2' does not match port width (4) of module 'register_bank' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/data_path.v:71]
+INFO: [Synth 8-6157] synthesizing module 'mux_2to1' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/mux_2to1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux_2to1' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/mux_2to1.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'out' does not match port width (32) of module 'mux_2to1' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/data_path.v:77]
+INFO: [Synth 8-6157] synthesizing module 'comparator' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/comparator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'subtractor' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/subtractor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'two_complement' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/two_complement.v:23]
+INFO: [Synth 8-6157] synthesizing module 'one_complement' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/one_complement.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'one_complement' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/one_complement.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'two_complement' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/two_complement.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'subtractor' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/subtractor.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'comparator' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/comparator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux_4to1' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/mux_4to1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux_4to1' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/mux_4to1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lmd' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/lmd.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'lmd' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/lmd.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder__parameterized0' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/adder.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder__parameterized0' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'subtractor__parameterized0' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/subtractor.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'subtractor__parameterized0' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/subtractor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'multiplier' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/multiplier.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'multiplier' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/multiplier.v:23]
+INFO: [Synth 8-6157] synthesizing module 'divider' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/divider.v:21]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'divider' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/divider.v:21]
+INFO: [Synth 8-6157] synthesizing module 'and_n' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/and_n.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'and_n' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/and_n.v:23]
+INFO: [Synth 8-6157] synthesizing module 'or_n' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/or_n.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'or_n' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/or_n.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xor_n' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/xor_n.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xor_st' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/xor_st.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xor_st' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/xor_st.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xor_n' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/xor_n.v:23]
+INFO: [Synth 8-6157] synthesizing module 'one_complement__parameterized0' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/one_complement.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'one_complement__parameterized0' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/one_complement.v:23]
+INFO: [Synth 8-6157] synthesizing module 'l_shift_left' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/l_shift_left.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mux_32_to_1' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/mux_8_to_1.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/mux_8_to_1.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'mux_32_to_1' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/mux_8_to_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'l_shift_left' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/l_shift_left.v:23]
+INFO: [Synth 8-6157] synthesizing module 'l_shift_right' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/l_shift_right.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'l_shift_right' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/l_shift_right.v:23]
+INFO: [Synth 8-6157] synthesizing module 'a_shift_right' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/a_shift_right.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'a_shift_right' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/a_shift_right.v:23]
+INFO: [Synth 8-6157] synthesizing module 'increment' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/increment.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'increment' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/increment.v:23]
+INFO: [Synth 8-6157] synthesizing module 'decrement' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/decrement.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'decrement' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/decrement.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ham32' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/ham32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ham' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/ham.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder__parameterized1' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/adder.v:23]
+	Parameter N bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder__parameterized1' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder__parameterized2' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/adder.v:23]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder__parameterized2' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder__parameterized3' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/adder.v:23]
+	Parameter N bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder__parameterized3' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ham' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/ham.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ham32' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/ham32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'nor_n' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/nor_n.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'or_n__parameterized0' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/or_n.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'or_n__parameterized0' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/or_n.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'nor_n' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/nor_n.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lui_n' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/lui_n.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'l_shift_left__parameterized0' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/l_shift_left.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'l_shift_left__parameterized0' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/l_shift_left.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'lui_n' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/lui_n.v:23]
+INFO: [Synth 8-6157] synthesizing module 'slt_n' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/slt_n.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'slt_n' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/slt_n.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sgt_n' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/sgt_n.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sgt_n' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/sgt_n.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cmov' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/cmov.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'cmov' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/cmov.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/alu.v:56]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/alu.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'data_path' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/data_path.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control_path' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/control_path.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/control_path.v:116]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/control_path.v:164]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/control_path.v:189]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/control_path.v:214]
+INFO: [Synth 8-6155] done synthesizing module 'control_path' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/control_path.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'main_module' (0#1) [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/main_module.v:23]
+WARNING: [Synth 8-3848] Net temp in module/entity instr_mem does not have driver. [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/instr_mem.v:29]
+WARNING: [Synth 8-7129] Port func[4] in module control_path is either unconnected or has no load
+WARNING: [Synth 8-7129] Port func[3] in module control_path is either unconnected or has no load
+WARNING: [Synth 8-7129] Port func[2] in module control_path is either unconnected or has no load
+WARNING: [Synth 8-7129] Port func[1] in module control_path is either unconnected or has no load
+WARNING: [Synth 8-7129] Port func[0] in module control_path is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[31] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[30] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[29] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[28] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[27] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[26] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[25] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[24] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[23] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[22] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[21] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[20] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[19] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[18] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[17] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[16] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[15] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[14] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[13] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[12] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[11] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[10] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[9] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[8] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[7] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[6] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[5] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port out[4] in module ham is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in[0] in module a_shift_right is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bits[4] in module a_shift_right is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bits[3] in module a_shift_right is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bits[2] in module a_shift_right is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bits[1] in module a_shift_right is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bits[0] in module a_shift_right is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module alu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module muxReg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[31] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[30] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[29] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[28] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[27] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[26] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[25] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[24] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[23] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[22] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[21] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[20] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[19] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[18] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[17] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pc[16] in module instr_mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcOut in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port en in module data_path is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rw in module data_path is either unconnected or has no load
+WARNING: [Synth 8-7129] Port memRead in module data_path is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1530.375 ; gain = 569.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1530.375 ; gain = 569.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1530.375 ; gain = 569.750
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1530.375 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'dp/dm/your_instance_name'
+Finished Parsing XDC File [c:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.gen/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'dp/dm/your_instance_name'
+Parsing XDC File [c:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'dp/im/your_instance_name'
+Finished Parsing XDC File [c:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'dp/im/your_instance_name'
+Parsing XDC File [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/constrs_1/new/ports.xdc]
+Finished Parsing XDC File [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/constrs_1/new/ports.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/constrs_1/new/ports.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1627.059 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1627.059 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1627.059 ; gain = 666.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1627.059 ; gain = 666.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for dp/dm/your_instance_name. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for dp/im/your_instance_name. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1627.059 ; gain = 666.434
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control_path'
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/mux_4to1.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/mux_8_to_1.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/alu.v:57]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                        000000001 |                             0000
+                 iSTATE2 |                        000000010 |                             0001
+                 iSTATE1 |                        000000100 |                             0010
+                 iSTATE0 |                        000001000 |                             0011
+                  iSTATE |                        000010000 |                             0100
+                 iSTATE7 |                        000100000 |                             0101
+                 iSTATE5 |                        001000000 |                             0110
+                 iSTATE4 |                        010000000 |                             0111
+                 iSTATE6 |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'control_path'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1627.059 ; gain = 666.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 540   
++---Registers : 
+	               32 Bit    Registers := 20    
+	               27 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 12    
+	   4 Input   32 Bit        Muxes := 3     
+	   2 Input   19 Bit        Muxes := 4     
+	   6 Input   19 Bit        Muxes := 2     
+	   9 Input   19 Bit        Muxes := 2     
+	   9 Input    9 Bit        Muxes := 1     
+	  10 Input    9 Bit        Muxes := 1     
+	   6 Input    9 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 25    
+	   3 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 3     
+	  10 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 2     
+	   9 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'ir1/rs_reg' and it is trimmed from '5' to '4' bits. [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/ir.v:35]
+WARNING: [Synth 8-7129] Port clk in module alu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcOut in module pc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port en in module data_path is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rw in module data_path is either unconnected or has no load
+WARNING: [Synth 8-7129] Port memRead in module data_path is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[31]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[30]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[29]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[28]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[27]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[26]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[25]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[24]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[23]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[22]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[21]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[20]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[19]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[18]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[17]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[16]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[15]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[14]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[13]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[12]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[11]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[10]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[9]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[8]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[7]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[6]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[5]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[4]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[3]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[2]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[1]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[0]) is unused and will be removed from module l_shift_left.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[31]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[30]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[29]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[28]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[27]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[26]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[25]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[24]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[23]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[22]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[21]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[20]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[19]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[18]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[17]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[16]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[15]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[14]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[13]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[12]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[11]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[10]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[9]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[8]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[7]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[6]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[5]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[4]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[3]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[2]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[1]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (m1/out_reg[0]) is unused and will be removed from module l_shift_right.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[31]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[30]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[29]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[28]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[27]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[26]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[25]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[24]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[23]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[22]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[21]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[20]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[19]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[18]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[17]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[16]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[15]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[14]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[13]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[12]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[11]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[10]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[9]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[8]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[7]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[6]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[5]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[4]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[3]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[2]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[1]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (lui1/l1/m1/out_reg[0]) is unused and will be removed from module alu.
+WARNING: [Synth 8-3332] Sequential element (dp/mx/out_reg) is unused and will be removed from module main_module.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1627.059 ; gain = 666.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1627.059 ; gain = 666.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1627.059 ; gain = 666.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 1627.059 ; gain = 666.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[31]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[30]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[29]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[28]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[27]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[26]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[25]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[24]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[23]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[22]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[21]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[20]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[19]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[18]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[17]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[16]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \dp/im/your_instance_name  has unconnected pin dina[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1627.059 ; gain = 666.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1627.059 ; gain = 666.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1627.059 ; gain = 666.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1627.059 ; gain = 666.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1627.059 ; gain = 666.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1627.059 ; gain = 666.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_2 |         1|
+|2     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |blk_mem_gen |     2|
+|3     |BUFG        |     3|
+|4     |CARRY4      |     4|
+|5     |LUT1        |     2|
+|6     |LUT2        |    42|
+|7     |LUT3        |   109|
+|8     |LUT4        |    86|
+|9     |LUT5        |   334|
+|10    |LUT6        |   740|
+|11    |MUXF7       |   144|
+|12    |MUXF8       |    64|
+|13    |FDRE        |   668|
+|14    |LD          |    32|
+|15    |IBUF        |     7|
+|16    |OBUF        |    16|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1627.059 ; gain = 666.434
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 32 critical warnings and 107 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1627.059 ; gain = 569.750
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 1627.059 ; gain = 666.434
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1627.059 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 244 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1627.059 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LD => LDCE: 32 instances
+
+Synth Design complete | Checksum: f8c39129
+INFO: [Common 17-83] Releasing license: Synthesis
+129 Infos, 174 Warnings, 32 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 1627.059 ; gain = 1084.602
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1627.059 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.runs/synth_1/main_module.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file main_module_utilization_synth.rpt -pb main_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 12 15:39:05 2024...

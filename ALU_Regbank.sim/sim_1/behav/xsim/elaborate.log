@@ -1,0 +1,70 @@
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_8 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'addra' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/instr_mem.v:34]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'w_add' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/data_path.v:71]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'out' [C:/Users/LENOVO/Downloads/ALU_Regbank/ALU_latest/ALU_Regbank/ALU_Regbank.srcs/sources_1/new/data_path.v:77]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkdiv
+Compiling module xil_defaultlib.pc
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_output_stage(...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_output_stage(...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.instr_mem
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_8.blk_mem_gen_v8_4_8(C_FAMILY="art...
+Compiling module xil_defaultlib.blk_mem_gen_2
+Compiling module xil_defaultlib.data_mem
+Compiling module xil_defaultlib.full_adder_1bit
+Compiling module xil_defaultlib.adder_default
+Compiling module xil_defaultlib.npc
+Compiling module xil_defaultlib.ir
+Compiling module xil_defaultlib.sign_extend
+Compiling module xil_defaultlib.muxReg
+Compiling module xil_defaultlib.register_bank
+Compiling module xil_defaultlib.mux_2to1
+Compiling module xil_defaultlib.one_complement_default
+Compiling module xil_defaultlib.two_complement
+Compiling module xil_defaultlib.subtractor
+Compiling module xil_defaultlib.comparator
+Compiling module xil_defaultlib.mux_4to1
+Compiling module xil_defaultlib.lmd
+Compiling module xil_defaultlib.multiplier
+Compiling module xil_defaultlib.divider
+Compiling module xil_defaultlib.and_n_default
+Compiling module xil_defaultlib.or_n_default
+Compiling module xil_defaultlib.xor_st
+Compiling module xil_defaultlib.xor_n_default
+Compiling module xil_defaultlib.mux_32_to_1
+Compiling module xil_defaultlib.l_shift_left
+Compiling module xil_defaultlib.l_shift_right
+Compiling module xil_defaultlib.a_shift_right
+Compiling module xil_defaultlib.increment
+Compiling module xil_defaultlib.decrement
+Compiling module xil_defaultlib.adder(N=1)
+Compiling module xil_defaultlib.adder(N=2)
+Compiling module xil_defaultlib.adder(N=3)
+Compiling module xil_defaultlib.ham
+Compiling module xil_defaultlib.ham32
+Compiling module xil_defaultlib.nor_n
+Compiling module xil_defaultlib.lui_n
+Compiling module xil_defaultlib.slt_n
+Compiling module xil_defaultlib.sgt_n
+Compiling module xil_defaultlib.cmov
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.data_path
+Compiling module xil_defaultlib.control_path
+Compiling module xil_defaultlib.main_module
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav

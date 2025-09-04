@@ -1,0 +1,52 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ALU_Regbank.gen/sources_1/ip/blk_mem_gen_2/sim/blk_mem_gen_2.v" \
+"../../../../ALU_Regbank.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/a_shift_right.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/adder.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/alu.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/and_n.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/clkdiv.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/cmov.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/comparator.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/control_path.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/data_mem.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/data_path.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/decrement.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/divider.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/full_adder_1bit.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/ham.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/ham32.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/increment.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/instr_mem.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/ir.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/l_shift_left.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/l_shift_right.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/lmd.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/lui_n.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/main_module.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/multiplier.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/muxReg.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/mux_2to1.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/mux_4to1.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/mux_8_to_1.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/nor_n.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/npc.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/one_complement.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/or_n.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/pc.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/register_bank.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/sgt_n.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/sign_extend.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/slt_n.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/subtractor.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/two_complement.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/xor_n.v" \
+"../../../../ALU_Regbank.srcs/sources_1/new/xor_st.v" \
+"../../../../ALU_Regbank.srcs/sim_1/new/test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
